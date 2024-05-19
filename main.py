@@ -12,8 +12,7 @@ browser.get("https://ru.wikipedia.org")
 assert "Википедия" in browser.title
 
 search_box = browser.find_element(By.ID, 'searchInput')
-#search_box.send_keys(query.strip())
-search_box.send_keys('Солнечная система')
+search_box.send_keys(query.strip())
 search_box.send_keys(Keys.RETURN)
 time.sleep(3)
 
